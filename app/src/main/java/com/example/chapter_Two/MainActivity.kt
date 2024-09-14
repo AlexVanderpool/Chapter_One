@@ -11,6 +11,16 @@ class MainActivity : AppCompatActivity() {
     private lateinit var trueButton: Button
     private lateinit var falseButton: Button
 
+    private val questionBank = listOf(
+       Question(R.string.Question_Australia, true),
+       Question(R.string.Question_oceans, true),
+        Question(R.string.Question_mideast, false),
+        Question(R.string.Question_africa, false),
+        Question(R.string.Question_americas, true),
+        Question(R.string.Question_asia, true)
+    )
+
+    private var currentIndex = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
