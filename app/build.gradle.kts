@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+buildFeatures{
+    viewBinding = true
 }
 
 dependencies {
@@ -45,5 +48,5 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-}
+    androidTestImplementation(libs.androidx.espresso.core)}}
+
