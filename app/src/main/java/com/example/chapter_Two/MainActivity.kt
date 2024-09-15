@@ -1,11 +1,14 @@
 package com.example.chapter_Two
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.example.chapter_Two.databinding.ActivityMainBinding
+
+private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
 
@@ -55,9 +58,11 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
 
-        // val questionTextResId = questionBank[currentIndex].textResId
-        // binding.questionTextView.setText(questionTextResId)
-        updateQuestion()
+        // Exercise 2
+        binding.questionTextView.setOnClickListener {
+            currentIndex = (currentIndex + 1) % questionBank.size
+            updateQuestion()
+        }
     }
 
     private fun updateQuestion() {
@@ -78,4 +83,5 @@ class MainActivity : AppCompatActivity() {
         messageResID,
         Toast.LENGTH_SHORT).show()
     }
+
 }

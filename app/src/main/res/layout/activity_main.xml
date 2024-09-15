@@ -26,12 +26,14 @@
             android:id="@+id/True"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="12dp"
             android:text="@string/True" />
 
         <Button
             android:id="@+id/False"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="12dp"
             android:text="@string/False" />
 
 
@@ -41,6 +43,7 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="12dp"
         android:text="@string/next_button"
         app:icon="@drawable/baseline_arrow_right_24"
         app:iconGravity="end"/>
