@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chapter_Two</string>
+    <string name="app_name">Geo Quiz</string>
     <string name="Question_Text">Canberra is the capital of Australia</string>
     <string name="True">True</string>
     <string name="False">False</string>
